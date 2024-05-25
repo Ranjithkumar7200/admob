@@ -9,8 +9,8 @@ import {
 
 export default function App() {
   const adUnitId = __DEV__
-    ? TestIds.ADAPTIVE_BANNER
-    : "ca-app-pub-6359617404766596/8171093237";
+    ? TestIds.BANNER
+    : "ca-app-pub-6359617404766596/5474810968";
   return (
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
