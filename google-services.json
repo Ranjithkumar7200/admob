@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "707325920462",
+    "project_id": "bet-app-notification-7e463",
+    "storage_bucket": "bet-app-notification-7e463.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707325920462:android:d92e1064acf013a0e13c9f",
+        "android_client_info": {
+          "package_name": "com.ranjithkumar7200.BETAPP"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUNs8Vuu1Oj2yq81Tv0eUNxkh5Hb2f_qk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707325920462:android:66b5644bcb3e1dfde13c9f",
+        "android_client_info": {
+          "package_name": "com.ranjithkumar7200.admob"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUNs8Vuu1Oj2yq81Tv0eUNxkh5Hb2f_qk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

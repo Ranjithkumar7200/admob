@@ -12,16 +12,27 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ranjithkumar7200.admob"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.ranjithkumar7200.admob",
+      "config": {
+        "admobAppId": "ca-app-pub-6359617404766596~9853454964"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "sdkVersion": "51.0.0",
+    "extra": {
+      "eas": {
+        "projectId": "8dc99759-4ae8-45e9-a4df-f816e08c7a69"
+      }
     }
   }
 }
