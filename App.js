@@ -13,13 +13,26 @@ export default function App() {
     : "ca-app-pub-6359617404766596/5474810968";
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Textind Admobs</Text>
+      <Text>{adUnitId}</Text>
       <BannerAd
         unitId={adUnitId}
         size={BannerAdSize.BANNER}
         requestOptions={{
           requestNonPersonalizedAdsOnly: true,
         }}
+      />
+      <BannerAd unitId={adUnitId} size={BannerAdSize.BANNER} />
+      <BannerAd
+        unitId={"ca-app-pub-6359617404766596/5474810968"}
+        size={BannerAdSize.BANNER}
+        requestOptions={{
+          requestNonPersonalizedAdsOnly: true,
+        }}
+      />
+      <BannerAd
+        unitId={"ca-app-pub-6359617404766596/5474810968"}
+        size={BannerAdSize.BANNER}
       />
       <StatusBar style="auto" />
     </View>
