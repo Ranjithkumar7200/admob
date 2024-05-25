@@ -1,34 +1,32 @@
-import React from "react";
+import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import { AdMobBanner } from "expo-ads-admob";
+import "expo-dev-client";
+import {
+  BannerAd,
+  BannerAdSize,
+  TestIds,
+} from "react-native-google-mobile-ads";
 
-export default class App extends React.Component {
-  bannerError() {
-    console.log("An error occurred while loading the banner.");
-    return;
-  }
-
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <AdMobBanner
-          style={styles.bottomBanner}
-          bannerSize="fullBanner"
-          adUnitID="ca-app-pub-3940256099942544/6300978111"
-          testDeviceID="EMULATOR"
-          didFailToReceiveAdWithError={this.bannerError}
-        />
-      </View>
-    );
-  }
+export default function App() {
+  const adUnitId = __DEV__
+    ? TestIds.ADAPTIVE_BANNER
+    : "ca-app-pub-6359617404766596/8171093237";
+  return (
+    <View style={styles.container}>
+      <Text>Open up App.js to start working on your app!</Text>
+      <BannerAd
+        unitId={adUnitId}
+        size={BannerAdSize.BANNER}
+        requestOptions={{
+          requestNonPersonalizedAdsOnly: true,
+        }}
+      />
+      <StatusBar style="auto" />
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-  bottomBanner: {
-    position: "absolute",
-    bottom: 0,
-  },
   container: {
     flex: 1,
     backgroundColor: "#fff",
